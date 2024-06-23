@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .user-details {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      max-width: 600px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Details</h1>
+  <div class="user-details">
+    <ul>
+      <li><strong>Name:</strong> <%= userName %></li>
+      <li><strong>Age:</strong> <%= userAge %></li>
+      <li><strong>Email:</strong> <%= userEmail %></li>
+      <li><strong>Phone:</strong> <%= userPhone %></li>
+      <li><strong>Address:</strong> <%= userAddress %></li>
+      <li><strong>Company:</strong> <%= userCompany %></li>
+      <li><strong>Balance:</strong> <%= userBalance %></li>
+      <li><strong>About:</strong> <%= userAbout %></li>
+    </ul>
+    <a href="/userlist">Back to User List</a>
+  </div>
+</body>
+</html>
